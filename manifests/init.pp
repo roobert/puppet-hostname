@@ -1,7 +1,7 @@
 class hostname (
-  $hostname = $fqdn
+  $hostname = $::fqdn
 ) {
   file { '/etc/hostname':
-    contents => $hostname
+    content => $hostname
   }
 }
